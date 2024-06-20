@@ -1,0 +1,137 @@
+body {
+  font-family: 'Arial', sans-serif;
+  color: #28282e;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background: rgb(174,207,238);
+  background: linear-gradient(117deg, rgba(174,207,238,1) 0%, rgba(157,102,231,1) 100%); }
+
+.main-content {
+  padding: 20px;
+}
+
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list {
+  list-style: disc;
+  margin: 10px 0;
+  
+
+}
+
+button {
+  margin-left: 10px;
+}
+
+
+.header {
+  font-family: 'Arial Black', sans-serif;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 3rem;
+  background: #000000; 
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  font-size: 5vh;
+  margin: 0;
+}
+
+.header .nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header .nav ul li  {
+  margin: 0 15px;
+}
+
+.header .nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header .nav ul li a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+
+.footer {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  gap: 1vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 3rem;
+  background: #000000; 
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width:100%;
+}
+
+.footer .container {
+  max-width :100%;
+  justify-content: center;
+  
+}
+
+.card{
+  justify-content: center;
+  position: center;
+  
+  border : 1px solid #eee;
+  min-height: 300px;
+  min-width: 200px;
+  max-width: 500px;
+
+	height: fit-content;
+	padding: 2rem 3rem;
+	border-radius: 2%;
+    -o-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -webkit-border-radius: 5%;
+  margin-top: 20vh;
+  box-shadow: inset 0 0 1.25rem var(--glass),
+    0rem 0rem 2rem rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(0.1rem);
+  background: var(--glass_trans);
+
+  
+}
+
+.name{
+  font-size: 3vh;
+  color: #28282e;
+  font-weight: bolder;
+  
+}
