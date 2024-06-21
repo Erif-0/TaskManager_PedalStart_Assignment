@@ -8,7 +8,7 @@ function TaskList() {
   const navigate=useNavigate();
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/tasks')
+    axios.get('https://taskmanager-backend-juk6.onrender.com/api/tasks')
     .then(response => {
         console.log('API response:', response.data); 
         if (Array.isArray(response.data)) {
@@ -47,7 +47,7 @@ function TaskList() {
   );
 
   function handleDelete(id) {
-    axios.delete(`http://localhost:5000/api/tasks/${id}`)
+    axios.delete(`https://taskmanager-backend-juk6.onrender.com/api/tasks/${id}`)
       .then(() => setTasks(tasks.filter(task => task.id !== id)))
       .catch(error => console.error(error));
   }
