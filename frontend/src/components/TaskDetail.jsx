@@ -8,7 +8,7 @@ function TaskDetail() {
   const [task, setTask] = useState(null);
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/api/tasks/${id}`)
+    axios.get(`https://taskmanager-backend-juk6.onrender.com/api/tasks/${id}`)
       .then(response => setTask(response.data))
       .catch(error => console.error(error));
   }, [id]);
