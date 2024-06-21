@@ -12,7 +12,7 @@ function TaskCreate() {
 
   useEffect(() => {
     if (id) {
-      axios.get(`http://localhost:5000/api/tasks/${id}`)
+      axios.get(`https://taskmanager-backend-juk6.onrender.com/${id}`)
         .then(response => {
           const { title, description, dueDate } = response.data;
           setTitle(title);
@@ -28,11 +28,11 @@ function TaskCreate() {
     const task = { title, description, dueDate };
 
     if (id) {
-      axios.put(`http://localhost:5000/api/tasks/${id}`, task)
+      axios.put(`https://taskmanager-backend-juk6.onrender.com/api/tasks/${id}`, task)
         .then(() => navigate('/'))
         .catch(error => console.error(error));
     } else {
-      axios.post('http://localhost:5000/api/tasks', task)
+      axios.post('https://taskmanager-backend-juk6.onrender.com/api/tasks', task)
         .then(() => navigate('/'))
         .catch(error => console.error(error));
     }
